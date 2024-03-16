@@ -19,11 +19,11 @@ public class Maze {
             for (int y = 0; y < map.length; y++) {
                 for (int x = 0; x < map[y].length; x++) {
                     if (x == current.x && y == current.y) {
-                        System.out.println("o");
+                        System.out.print("o");
                     } else if (map[y][x] == 1) {
-                        System.out.println("*");
+                        System.out.print("*");
                     } else {
-                        System.out.println(".");
+                        System.out.print(".");
                     }
                 }
                 System.out.println();
