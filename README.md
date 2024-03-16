@@ -1,3 +1,2 @@
 # QJP
 Quality Java Professional
-
