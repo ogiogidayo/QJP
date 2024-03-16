@@ -12,8 +12,40 @@ public class Maze {
         };
         var current = new Position(1, 1);
         var goal = new Position(4, 3);
-//        for (;;) {
-//            for ()
-//        }
+        for (;;) {
+            // 迷路の表示
+            for (int y = 0; y < map.length; y++) {
+                for (int x = 0; x < map[y].length; x++) {
+                    if (x == current.x && y == current.y) {
+                        System.out.println("o");
+                    } else if (map[y][x] == 1) {
+                        System.out.println("*");
+                    } else {
+                        System.out.println(".");
+                    }
+                }
+                System.out.println();
+            }
+            // ゴール判定
+            if (current.equals(goal)) {
+                System.out.println("GOAL!!!");
+                break;
+            }
+            // キー入力処理
+            int ch = System.in.read();
+            var next = switch (ch) {
+                case 'a' -> new Position(current.x - 1, current.y);
+                case 'w' -> new Position(current.x, current.y - 1);
+                case 's' -> new Position(current.x + 1, current.y);
+                case 'z' -> new Position(current.x, current.y + 1);
+                default -> current;
+            };
+            // 押された方向が通路なら進む
+            if (map[next.y()][next.x()] == 0) {
+                current = next;
+            }
+            // Enterキーの入力を捨てる
+            System.in.read();
+        }
     }
 }
