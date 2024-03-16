@@ -38,8 +38,8 @@ public class Maze {
             var next = switch (ch) {
                 case 'a' -> new Position(current.x - 1, current.y);
                 case 'w' -> new Position(current.x, current.y - 1);
-                case 's' -> new Position(current.x + 1, current.y);
-                case 'z' -> new Position(current.x, current.y + 1);
+                case 'd' -> new Position(current.x + 1, current.y);
+                case 's' -> new Position(current.x, current.y + 1);
                 default -> current;
             };
             // 押された方向が通路なら進む
