@@ -1,7 +1,9 @@
 package projava;
 
+import java.io.IOException;
+
 public class Maze {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         record Position(int x, int y) {}
         int[][] map = {
                 {1, 1, 1, 1, 1, 1},
