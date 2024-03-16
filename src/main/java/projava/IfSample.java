@@ -5,6 +5,8 @@ public class IfSample {
         var a = 2;
         if (a < 3) {
             System.out.println("Small");
+        } else {
+            System.out.println("Big");
         }
     }
 }
