@@ -13,6 +13,11 @@ public class InheritSample3 {
         public String getName() {
             return name;
         }
+
+        @Override               // メソッドのオーバーライド
+        public String toString() {
+            return "%sの%s".formatted(getClass().getSimpleName(), getName());
+        }
     }
 
     static class Student extends User {
