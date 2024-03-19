@@ -15,6 +15,7 @@ public class InheritSample {
         int score;
 
         Student(String name, int score) {
+            // super(); が省略されている
             this.name = name;
             this.score = score;
         }
@@ -28,6 +29,7 @@ public class InheritSample {
         String subject;
 
         Teacher(String name, String subject) {
+            // super(); が省略されている
             this.name = name;
             this.subject = subject;
         }
