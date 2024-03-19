@@ -1,2 +1,11 @@
 # QJP
-Quality Java Professional
+*Quality Java Professional*
+Javaのお勉強、大学で使うので  
+
+## 参考書籍
+**プロになるJava―仕事で必要なプログラミングの知識がゼロから身につく最高の指南書**  
+**著者**: きしだ なおき, 山本 裕介, 杉山 貴章  
+**出版社**: 技術評論社  
+**発売日**: 2022年3月19日  
+**ページ数**: 512ページ  
+[Amazon](https://amzn.asia/d/0m9trfA)
