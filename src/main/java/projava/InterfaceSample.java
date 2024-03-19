@@ -11,9 +11,10 @@ public class InterfaceSample {
 
     public static void main(String[] args) {
         var people = List.of(new Student("kis", 80), new Teacher("hosoya", "Math"));
-    for (Named p : people) {
-        var n = p.name();
-        System.out.println("こんにちは%sさん".formatted(n));
-    }
+
+        for (Named p : people) {
+            var n = p.name();
+            System.out.println("こんにちは%sさん".formatted(n));
+        }
     }
 }
