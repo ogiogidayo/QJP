@@ -60,8 +60,13 @@ public class InheritSample3 {
 
     public static void main(String[] args) {
         List<User> people = List.of(
-                new Student("kis", 80),
-                new Teacher("hosoya", "math"));
+                new User("匿名") {    // 匿名クラス
+                    @Override
+                    String profile() {
+                        return "ダミー";
+                    }
+                }
+        );
         for (var p :people) {
             System.out.println("こんにちは%sさん".formatted(p.getName()));
             System.out.println(p);
