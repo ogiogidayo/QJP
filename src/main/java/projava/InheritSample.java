@@ -2,7 +2,7 @@ package projava;
 
 import java.util.List;
 
-public class InheritSsample {
+public class InheritSample {
     static class User {
         String name;
 
